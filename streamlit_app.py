@@ -46,3 +46,5 @@ streamlit.dataframe(my_data_rows)
 #New Section to display fruityvice api response
 fruit_add = streamlit.text_input('What fruit would you like to add?')
 streamlit.write('Thanks for adding ', fruit_add)
+
+my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('fruit_add');")

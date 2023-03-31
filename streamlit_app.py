@@ -48,4 +48,4 @@ fruit_add = streamlit.text_input('What fruit would you like to add?')
 streamlit.write('Thanks for adding ', fruit_add)
 
 my_curs = my_cnx.cursor()
-my_curs.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('fruit_add');")
+my_curs.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('" + fruit_add + "');")
